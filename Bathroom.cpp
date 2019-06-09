@@ -84,7 +84,7 @@ Space *Bathroom::move()
 	// move to Bedroom
 	if (num == 1)
 	{
-		
+		delete [] currentSpace; 
 		top = new Bedroom();
 		currentSpace = top; 
 	
@@ -92,6 +92,7 @@ Space *Bathroom::move()
 	//move to garage
 	else if(num == 2)
 	{
+		delete [] currentSpace; 
 		bottom = new Garage();
 		currentSpace = bottom; 
 		
@@ -99,6 +100,7 @@ Space *Bathroom::move()
 	//move to living room
 	else if (num == 4)
 	{
+		delete [] currentSpace; 
 		right = new LivingRoom(); 
 		currentSpace = right; 
 		

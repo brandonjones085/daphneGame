@@ -331,7 +331,7 @@ int num = std::rand() % 6 + 1;
 		int h = player.getHealth();
 
 		h -= damage; 
-		player.setHealth(5); 
+		player.setHealth(h); 
 	}
 
 

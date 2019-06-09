@@ -55,7 +55,7 @@ Space *Garage::move()
 
 	if (num == 1)
 	{
-
+		delete [] currentSpace; 
 		top = new Bathroom();
 		currentSpace = top; 
 

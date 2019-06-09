@@ -55,6 +55,7 @@ Space *Bedroom2::move()
 
 	if (num == 1)
 	{
+		delete [] currentSpace; 
 		top = new Bathroom2();
 		currentSpace = top;
 
@@ -62,6 +63,7 @@ Space *Bedroom2::move()
 	}
 	else if (num == 3)
 	{
+		delete [] currentSpace; 
 		left = new LivingRoom();
 		currentSpace = left;
 

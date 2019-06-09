@@ -55,11 +55,13 @@ Space *Bedroom::move()
 
 	if (num == 4)
 	{
+		delete [] currentSpace; 
 		right = new Kitchen();
 		currentSpace = right; 
 	}
 	else if (num == 2)
 	{
+		delete [] currentSpace; 
 		bottom = new Bathroom();
 		currentSpace = bottom; 
 	
