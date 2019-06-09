@@ -767,11 +767,16 @@ int Game::heal(std::string s, int d)
 *******************************************************************************/
 int Game::getCount(node *h)
 {
-	if (head == NULL)
+	int count = 0; 
+	node *current = h; 
+
+	while(current != NULL)
 	{
-		return 0; 
+		count++; 
+		current = current->next; 
 	}
-	return 1 + getCount(h->next);
+	return count; 
+
 }
 
 /*******************************************************************************
@@ -782,7 +787,7 @@ int Game::getCount(node *h)
 void Game::validateLinkList(int &i, int ll)
 {
 	
-	while (!std::cin || (i < 1 || i > ll))
+	while (!std::cin || (i < 0 || i > ll))
 	{
 		std::cout << "\nEnter a number within the range\n";
 		std::cout << "Start at index 0!\n";

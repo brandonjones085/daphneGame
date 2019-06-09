@@ -22,7 +22,7 @@ Space::Space()
 
 Space *Space::move() { return nullptr; }
 
-int Space::specialAbility() { return 1000; };
+int Space::specialAbility() { return 1000; }
 
 
 std::string Space::getName()
@@ -41,7 +41,7 @@ void *Space::getCurrentRoom()
 	return currentSpace; 
 }
 
-void Space::welcome() {}; 
+void Space::welcome() {} 
 
 Space::~Space()
 {

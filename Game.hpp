@@ -68,7 +68,7 @@ public:
 	int getCount(node *h);
 	void validateChar(char &); 
 	void validateRoomInt(int &); 
-	
+	void validateNum(int &); 	
 };
 
 #endif
