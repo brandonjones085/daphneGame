@@ -65,8 +65,16 @@ void Game::run()
 		}
 
 		//looks for special ability
-		//if 1 is returned it will be stored
+		//if 1, 3, 5 is returned it will be stored
 		int special = getCurrentRoom()->specialAbility(); 
+
+		int l = getCount(head); 
+
+
+		//checks if the length is greater than 3
+		
+		if(l <= 3)
+		{
 
 		if (special == 1)
 		{
@@ -82,7 +90,12 @@ void Game::run()
 		}
 
 
+		}
+		else
+		{
+		std::cout << "You are unable to carry more than 3 items" << std::endl; 
 
+		}
 
 
 		//randomly occuring negative health even
